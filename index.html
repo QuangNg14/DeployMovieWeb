@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movies</title>
+  <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0008/1274/4765/products/98d7eae13770ae7e8e91148ebf35c209.png?v=1558441579" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/comment.css">
+  <link rel="stylesheet" href="../css/mainPage.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA2Yv3n9de9vkmU6zCodVqYz_kxfYozOqQ",
+      authDomain: "movies-view.firebaseapp.com",
+      databaseURL: "https://movies-view.firebaseio.com",
+      projectId: "movies-view",
+      storageBucket: "",
+      messagingSenderId: "533608655544",
+      appId: "1:533608655544:web:868309ed1b8edaf9"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+  </script>
+  <!-- <script src="../js/components.js"></script>
+  <script src="../js/view.js"></script> -->
+</head>
+
+<body>
+  <div id="app">
+    <!-- page content -->
+  </div>
+
+  <script src="../js/controller.js"></script>
+  <script src="../js/model.js"></script>
+  <script src="../js/view.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/index.js"></script>
+
+</body>
+
+</html>

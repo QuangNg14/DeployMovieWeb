@@ -1,0 +1,147 @@
+body{
+  background: white;
+  font-family: ubuntu;
+}
+
+h1{
+  color: black;
+  font-size: 64px;
+  letter-spacing: 2px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.content{
+  background: #fff;
+  max-width: 960px;
+  margin: 30px auto;
+  padding:  20px 30px;
+  border-radius: 10px 120px 10px 10px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+#film-list>li{
+  padding: 20px;
+  background: #f6f6f6;
+  font-size: 20px;
+  color: #555;
+  position: relative;
+  border-bottom: 2px solid #726f6f;
+  height: auto;
+}
+/* 
+#film-list>li:nth-child(even){
+  padding: 20px;
+  background: #d3d1d1;
+} */
+
+#film-list>li span{
+  display: block;
+
+}
+
+.cross{
+  align-self: flex-end;
+  background: red;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight:  bold;
+  cursor:  pointer;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display: flex
+}
+.update{
+  min-width:30px;
+  max-width: 120px;
+  height: 40px;
+  padding:5px;
+  background:rgb(37,34,111);
+  color:#ffffff;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left:20px
+}
+.myBtn{
+  font-size:15px;
+  margin-bottom: 10px
+}
+
+.function{
+  width: 30%;
+  flex-direction: row;
+  display: flex;
+  align-items: center
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+} 
+
+form input{
+    width:40%;
+    height: 38px;
+    border:1px solid #ebeaeb;
+    border-radius:5px;
+    font-size: 13px;
+    padding:5px;
+    float: left;
+    margin-bottom: 5px;
+    margin-left:10px
+}
+
+form input:focus{
+  outline: none;
+  border-bottom: 2px solid rgb(53, 49, 49);
+  padding-bottom: 8px;
+  transition: all ease 0.2s;
+}
+
+form:after{
+  /* content: '';
+  clear: both; */
+  display: block;
+}
+
+.info{
+  font-size: 15px;
+  color: rgb(116, 109, 109)
+}
+
+#add-film{
+  min-width:30px;
+  max-width: 120px;
+  height: 38px;
+  padding:5px;
+  background:rgb(37,34,111);
+  color:#ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-left:50px
+}
+/* button{
+  border: 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 13px;
+  width: 14%;
+  box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-family: ubuntu;
+  letter-spacing: 1px;
+  color: #999;
+} */
+
+.more {display: none;}
+.dot{display:none}

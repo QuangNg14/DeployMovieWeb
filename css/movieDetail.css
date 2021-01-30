@@ -1,0 +1,229 @@
+
+#film-detail{
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  flex-direction: column
+}
+
+#each-movie-container{
+  width: 100%;
+  height: 70%;
+
+}
+/* anh backdrop */
+#backdrop-path{
+  width: 100%;
+  height: 60%;
+  background-size:cover;
+  background:no-repeat center center;
+  position: relative;
+}
+
+#backdrop{
+  z-index: -1;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+}
+/* anh backdrop */
+
+
+#movie-content{
+  display: flex;
+  flex-direction: row
+}
+
+#movie-content >#film-detail{
+  width: 60%;
+  position: absolute;
+  height: 45%;
+  top:200px;
+  left:35%;
+  color:white;
+  z-index: 3;
+}
+
+#movie-content >#film-detail > ul{
+  list-style-type:none
+}
+#movie-content >#film-detail > ul > li{
+  list-style-type:none;
+  margin-bottom:10px
+}
+
+#movie-content >#film-detail > ul >#title{
+  font-size: 25px;
+  text-transform: uppercase
+}
+
+#movie-content >#film-detail > ul >#release-day{
+  font-size: 15px;
+  color:white
+}
+
+
+#movie-content >#film-detail > ul >#rating{
+  font-size: 20px;
+  color:white
+}
+
+#movie-content >#film-detail > ul >#type{
+  font-size: 15px;
+  color:rgb(170, 165, 165);
+  margin-bottom: 40px
+}
+
+#movie-content >#film-detail > ul >#overview{
+  font-size: 15px;
+  color:black;
+  margin-top: 60px
+
+}
+#movie-content >#film-detail > ul >#movie-comment{
+  font-size: 20px;
+  color:black;
+}
+.watch-btn{
+  min-width:80px;
+  height: 38px;
+  padding:5px;
+  background:rgb(37,34,111);
+  color:#ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-right:50px
+}
+
+#hr-bar{
+  width:100%;
+  height: 1.5px;
+  background: rgb(224, 217, 217)
+}
+#poster-path{
+  width:17%;
+  height: 45%;
+  position: absolute;
+  top:200px;
+  left:250px;
+  border:2px solid white;
+  z-index: 3;
+
+}
+/* comment session */
+
+.comment-container{
+  width: 80%;
+  height: 30%;
+  align-self: center
+}
+
+#comment-submit-btn{
+  min-width:120px;
+  height: 38px;
+  padding:5px;
+  background:rgb(37,34,111);
+  color:#ffffff;
+  font-size: 13px;
+  border-radius: 5px
+}
+
+#list-comments>li{
+  display: flex;
+  flex-direction: row
+}
+
+#list-comments>li>span{
+  padding:10px 20px 10px 20px;
+  border-radius: 20px;
+  background:rgb(238, 231, 231);
+  margin-bottom: 20px;
+  margin-left:20px
+}
+
+@media screen and (max-width:414px){
+  #each-movie-container{
+    width: 100%;
+    height: 50%;
+  
+  }
+  #backdrop-path{
+    width: 100%;
+    height: 70%;
+    background-size:cover;
+    background:no-repeat center center;
+    position: relative;
+  }
+  #poster-path{
+    width:30%;
+    height: 25%;
+    position: absolute;
+    top:200px;
+    left:260px;
+    border:2px solid white;
+    z-index: 3;
+  }
+  #movie-content >#film-detail > ul{
+    list-style-type:none;
+    margin-left:-30px
+  }
+  #movie-content >#film-detail > ul > li{
+    list-style-type:none;
+    margin-bottom:10px
+  }
+  
+  #movie-content >#film-detail > ul >#title{
+    font-size: 15px;
+    text-transform: uppercase
+  }
+  
+  #movie-content >#film-detail > ul >#release-day{
+    font-size: 15px;
+    color:white
+  }
+  
+  
+  #movie-content >#film-detail > ul >#rating{
+    font-size: 15px;
+    color:rgb(170, 165, 165);
+  }
+  
+  #movie-content >#film-detail > ul >#type{
+    font-size: 12px;
+    color:rgb(170, 165, 165);
+    margin-bottom: 40px;
+    max-width: 100px;
+  }
+  
+  #movie-content >#film-detail > ul >#overview{
+    font-size: 13px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+  }
+
+  #movie-content >#film-detail > ul >#movie-comment{
+    font-size: 17px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    }
+  .watch-btn{
+    min-width:70px;
+    height: 30px;
+    padding:5px;
+    background:rgb(37,34,111);
+    color:#ffffff;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-right:50px;
+    border-bottom: 50px
+  }
+  
+
+}
